@@ -10,7 +10,9 @@ export default function AuthorCard({ author }) {
       <div className="flex flex-wrap items-start sm:flex-nowrap sm:space-x-6">
         <div className="relative mt-1 h-24 w-24 flex-shrink-0 ">
           {imageProps && (
-            <Link href={`https://www.mohammedalfakir.site/`}>
+            <Link
+              href={`https://www.mohammedalfakir.site/`}
+              target="_blank">
               <Image
                 src={imageProps.src}
                 alt={author.name}
@@ -33,6 +35,7 @@ export default function AuthorCard({ author }) {
           <div className="mt-3">
             <Link
               href={`https://www.mohammedalfakir.site/`}
+              target="_blank"
               className="bg-brand-secondary/20 rounded-full py-2 text-sm text-blue-600 dark:text-blue-500 ">
               View Profile
             </Link>
