@@ -15,14 +15,14 @@ export default function About({ authors, settings }) {
         </p>
       </div>
 
-      <div className="mb-16 mt-6 grid grid-cols-3 gap-5 md:mb-32 md:mt-16 md:gap-16">
+      <div className="mb-16 mt-6 flex items-center justify-center md:mb-32 ">
         {authors.slice(0, 3).map(author => {
           const imageProps = urlForImage(author?.image) || null;
           return (
             <div
               key={author._id}
-              className="relative aspect-square overflow-hidden rounded-md bg-slate-50 odd:translate-y-10 odd:md:translate-y-16">
-              <Link href={`/author/${author?.slug}`}>
+              className="relative aspect-square h-72 w-72 overflow-hidden rounded-md bg-slate-50 odd:translate-y-10 odd:md:translate-y-16">
+              <Link href={`https://www.mohammedalfakir.site/`}>
                 {imageProps && (
                   <Image
                     src={imageProps?.src}
@@ -40,15 +40,19 @@ export default function About({ authors, settings }) {
 
       <div className="prose mx-auto mt-14 text-center dark:prose-invert">
         <p>
-          We provide real-time connectivity to enable software
-          providers and financial institutions to build integrated
-          products for their small business customers.
+          As a dedicated Front-End Developer with 3 years of hands-on
+          experience, I bring expertise in React.js, Next.js,
+          Typescript, and Tailwind CSS to the table. My journey in web
+          development began with a passion for coding, which has
+          evolved into a professional career focused on crafting
+          intuitive and visually compelling user interfaces.
         </p>
         <p>
-          Our API infrastructure is leveraged by clients ranging from
-          lenders to corporate card providers and business forecasting
-          tools, with use cases including automatic reconciliation,
-          business dashboarding, and loan decisioning.
+          Im a self-taught developer who changed careers during the
+          Covid pandemic. Throughout my tenure, Ive successfully
+          delivered projects ranging from dynamic web applications to
+          responsive websites, leveraging my proficiency in modern
+          frameworks and best practices.
         </p>
         <p>
           <Link href="/contact">Get in touch</Link>
