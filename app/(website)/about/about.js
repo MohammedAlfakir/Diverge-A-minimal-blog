@@ -15,7 +15,7 @@ export default function About({ authors, settings }) {
         </p>
       </div>
 
-      <div className="mb-16 mt-6 flex items-center justify-center md:mb-32 ">
+      <div className="mb-16 flex items-center justify-center md:mb-32 ">
         {authors.slice(0, 3).map(author => {
           const imageProps = urlForImage(author?.image) || null;
           return (
