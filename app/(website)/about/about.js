@@ -10,7 +10,9 @@ export default function About({ authors, settings }) {
         About
       </h1>
       <div className="text-center">
-        <p className="text-lg">We are a small passionate team.</p>
+        <p className="text-lg">
+          Front-End Developer with 3 years of experience.
+        </p>
       </div>
 
       <div className="mb-16 mt-6 grid grid-cols-3 gap-5 md:mb-32 md:mt-16 md:gap-16">
