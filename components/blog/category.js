@@ -11,7 +11,8 @@ export default function CategoryLabel({
         categories.slice(0).map((category, index) => (
           <Link
             href={`https://www.mohammedalfakir.site/`}
-            key={index}>
+            key={index}
+            target="_blank">
             <Label nomargin={nomargin} color={category.color}>
               {category.title}
             </Label>
